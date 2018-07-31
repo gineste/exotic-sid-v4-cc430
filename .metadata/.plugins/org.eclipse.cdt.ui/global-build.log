@@ -1,0 +1,228 @@
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: 'SIDV3_CC430.out' is up to date.
+gmake[1]: Nothing to be done for 'secondary-outputs'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: 'SIDV3_CC430.out' is up to date.
+gmake[1]: Nothing to be done for 'secondary-outputs'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../Projects/main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --include_path="C:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Projects" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Libraries" --include_path="C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning --preproc_with_compile --preproc_dependency="Projects/main.d" --obj_directory="Projects"  "../Projects/main.c"
+"../Projects/main.c", line 559: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../Projects/main.c", line 704: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 862: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../Projects/main.c", line 965: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 911: remark #1535-D: (ULP 8.1) variable "l_au8Temp" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Projects/main.c", line 368: remark #1535-D: (ULP 8.1) variable "g_au8TransmitBuffer" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../Projects/main.c'
+' '
+'Building target: SIDV3_CC430.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning -z -m"SIDV3_CC430.map" --heap_size=40 --stack_size=150 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="SIDV3_CC430_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "SIDV3_CC430.out" "./Libraries/CC430/dma.obj" "./Libraries/CC430/hal_pmm.obj" "./Libraries/ES_Protocol/ES_Interfaces.obj" "./Libraries/ES_Protocol/ES_Protocol.obj" "./Libraries/RF/RF1A.obj" "./Libraries/RF/RfRegSettings.obj" "./Libraries/TPMS/tpms.obj" "./Libraries/TPMS/tpms_ak.obj" "./Libraries/TPMS/tpms_ask.obj" "./Libraries/TPMS/tpms_ldl.obj" "./Libraries/TPMS/tpms_mems.obj" "./Libraries/TPMS/tpms_sid.obj" "./Libraries/Tools/lib_ExoFifo.obj" "./Libraries/Tools/time_functions.obj" "./Projects/main.obj" "../Projects/lnk_cc430f5137.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: SIDV3_CC430.out'
+' '
+'Invoking: MSP430 Hex Utility'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 --intel -o "SIDV3_CC430.hex"  "SIDV3_CC430.out" 
+Translating to Intel format...
+   "SIDV3_CC430.out" .text ==> .text
+   "SIDV3_CC430.out" .const ==> .const
+   "SIDV3_CC430.out" .cinit ==> .cinit
+   "SIDV3_CC430.out" AES ==> AES
+   "SIDV3_CC430.out" RTC ==> RTC
+   "SIDV3_CC430.out" PORT2 ==> PORT2
+   "SIDV3_CC430.out" PORT1 ==> PORT1
+   "SIDV3_CC430.out" TIMER1_A1 ==> TIMER1_A1
+   "SIDV3_CC430.out" TIMER1_A0 ==> TIMER1_A0
+   "SIDV3_CC430.out" DMA ==> DMA
+   "SIDV3_CC430.out" CC1101 ==> CC1101
+   "SIDV3_CC430.out" TIMER0_A1 ==> TIMER0_A1
+   "SIDV3_CC430.out" TIMER0_A0 ==> TIMER0_A0
+   "SIDV3_CC430.out" ADC12 ==> ADC12
+   "SIDV3_CC430.out" USCI_B0 ==> USCI_B0
+   "SIDV3_CC430.out" USCI_A0 ==> USCI_A0
+   "SIDV3_CC430.out" WDT ==> WDT
+   "SIDV3_CC430.out" COMP_B ==> COMP_B
+   "SIDV3_CC430.out" UNMI ==> UNMI
+   "SIDV3_CC430.out" SYSNMI ==> SYSNMI
+   "SIDV3_CC430.out" .reset ==> .reset
+'Finished building: SIDV3_CC430.hex'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../Projects/main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --include_path="C:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Projects" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Libraries" --include_path="C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning --preproc_with_compile --preproc_dependency="Projects/main.d" --obj_directory="Projects"  "../Projects/main.c"
+"../Projects/main.c", line 559: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../Projects/main.c", line 703: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 861: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../Projects/main.c", line 964: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 910: remark #1535-D: (ULP 8.1) variable "l_au8Temp" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Projects/main.c", line 368: remark #1535-D: (ULP 8.1) variable "g_au8TransmitBuffer" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../Projects/main.c'
+' '
+'Building target: SIDV3_CC430.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning -z -m"SIDV3_CC430.map" --heap_size=40 --stack_size=150 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="SIDV3_CC430_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "SIDV3_CC430.out" "./Libraries/CC430/dma.obj" "./Libraries/CC430/hal_pmm.obj" "./Libraries/ES_Protocol/ES_Interfaces.obj" "./Libraries/ES_Protocol/ES_Protocol.obj" "./Libraries/RF/RF1A.obj" "./Libraries/RF/RfRegSettings.obj" "./Libraries/TPMS/tpms.obj" "./Libraries/TPMS/tpms_ak.obj" "./Libraries/TPMS/tpms_ask.obj" "./Libraries/TPMS/tpms_ldl.obj" "./Libraries/TPMS/tpms_mems.obj" "./Libraries/TPMS/tpms_sid.obj" "./Libraries/Tools/lib_ExoFifo.obj" "./Libraries/Tools/time_functions.obj" "./Projects/main.obj" "../Projects/lnk_cc430f5137.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: SIDV3_CC430.out'
+' '
+'Invoking: MSP430 Hex Utility'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 --intel -o "SIDV3_CC430.hex"  "SIDV3_CC430.out" 
+Translating to Intel format...
+   "SIDV3_CC430.out" .text ==> .text
+   "SIDV3_CC430.out" .const ==> .const
+   "SIDV3_CC430.out" .cinit ==> .cinit
+   "SIDV3_CC430.out" AES ==> AES
+   "SIDV3_CC430.out" RTC ==> RTC
+   "SIDV3_CC430.out" PORT2 ==> PORT2
+   "SIDV3_CC430.out" PORT1 ==> PORT1
+   "SIDV3_CC430.out" TIMER1_A1 ==> TIMER1_A1
+   "SIDV3_CC430.out" TIMER1_A0 ==> TIMER1_A0
+   "SIDV3_CC430.out" DMA ==> DMA
+   "SIDV3_CC430.out" CC1101 ==> CC1101
+   "SIDV3_CC430.out" TIMER0_A1 ==> TIMER0_A1
+   "SIDV3_CC430.out" TIMER0_A0 ==> TIMER0_A0
+   "SIDV3_CC430.out" ADC12 ==> ADC12
+   "SIDV3_CC430.out" USCI_B0 ==> USCI_B0
+   "SIDV3_CC430.out" USCI_A0 ==> USCI_A0
+   "SIDV3_CC430.out" WDT ==> WDT
+   "SIDV3_CC430.out" COMP_B ==> COMP_B
+   "SIDV3_CC430.out" UNMI ==> UNMI
+   "SIDV3_CC430.out" SYSNMI ==> SYSNMI
+   "SIDV3_CC430.out" .reset ==> .reset
+'Finished building: SIDV3_CC430.hex'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: 'SIDV3_CC430.out' is up to date.
+gmake[1]: Nothing to be done for 'secondary-outputs'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../Projects/main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --include_path="C:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Projects" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Libraries" --include_path="C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning --preproc_with_compile --preproc_dependency="Projects/main.d" --obj_directory="Projects"  "../Projects/main.c"
+"../Projects/main.c", line 559: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../Projects/main.c", line 703: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 861: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../Projects/main.c", line 964: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 910: remark #1535-D: (ULP 8.1) variable "l_au8Temp" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Projects/main.c", line 368: remark #1535-D: (ULP 8.1) variable "g_au8TransmitBuffer" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../Projects/main.c'
+' '
+'Building target: SIDV3_CC430.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning -z -m"SIDV3_CC430.map" --heap_size=40 --stack_size=150 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="SIDV3_CC430_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "SIDV3_CC430.out" "./Libraries/CC430/dma.obj" "./Libraries/CC430/hal_pmm.obj" "./Libraries/ES_Protocol/ES_Interfaces.obj" "./Libraries/ES_Protocol/ES_Protocol.obj" "./Libraries/RF/RF1A.obj" "./Libraries/RF/RfRegSettings.obj" "./Libraries/TPMS/tpms.obj" "./Libraries/TPMS/tpms_ak.obj" "./Libraries/TPMS/tpms_ask.obj" "./Libraries/TPMS/tpms_ldl.obj" "./Libraries/TPMS/tpms_mems.obj" "./Libraries/TPMS/tpms_sid.obj" "./Libraries/Tools/lib_ExoFifo.obj" "./Libraries/Tools/time_functions.obj" "./Projects/main.obj" "../Projects/lnk_cc430f5137.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: SIDV3_CC430.out'
+' '
+'Invoking: MSP430 Hex Utility'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 --intel -o "SIDV3_CC430.hex"  "SIDV3_CC430.out" 
+Translating to Intel format...
+   "SIDV3_CC430.out" .text ==> .text
+   "SIDV3_CC430.out" .const ==> .const
+   "SIDV3_CC430.out" .cinit ==> .cinit
+   "SIDV3_CC430.out" AES ==> AES
+   "SIDV3_CC430.out" RTC ==> RTC
+   "SIDV3_CC430.out" PORT2 ==> PORT2
+   "SIDV3_CC430.out" PORT1 ==> PORT1
+   "SIDV3_CC430.out" TIMER1_A1 ==> TIMER1_A1
+   "SIDV3_CC430.out" TIMER1_A0 ==> TIMER1_A0
+   "SIDV3_CC430.out" DMA ==> DMA
+   "SIDV3_CC430.out" CC1101 ==> CC1101
+   "SIDV3_CC430.out" TIMER0_A1 ==> TIMER0_A1
+   "SIDV3_CC430.out" TIMER0_A0 ==> TIMER0_A0
+   "SIDV3_CC430.out" ADC12 ==> ADC12
+   "SIDV3_CC430.out" USCI_B0 ==> USCI_B0
+   "SIDV3_CC430.out" USCI_A0 ==> USCI_A0
+   "SIDV3_CC430.out" WDT ==> WDT
+   "SIDV3_CC430.out" COMP_B ==> COMP_B
+   "SIDV3_CC430.out" UNMI ==> UNMI
+   "SIDV3_CC430.out" SYSNMI ==> SYSNMI
+   "SIDV3_CC430.out" .reset ==> .reset
+'Finished building: SIDV3_CC430.hex'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug_5137 for project SIDV3_CC430 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../Projects/main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --include_path="C:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Projects" --include_path="C:/_Projets_/SIDV4/SIDV3_CC430/Libraries" --include_path="C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning --preproc_with_compile --preproc_dependency="Projects/main.d" --obj_directory="Projects"  "../Projects/main.c"
+"../Projects/main.c", line 559: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../Projects/main.c", line 703: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 861: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../Projects/main.c", line 964: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../Projects/main.c", line 910: remark #1535-D: (ULP 8.1) variable "l_au8Temp" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Projects/main.c", line 368: remark #1535-D: (ULP 8.1) variable "g_au8TransmitBuffer" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: ../Projects/main.c'
+' '
+'Building target: SIDV3_CC430.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --abi=eabi --data_model=large --code_model=large -Ooff --opt_for_speed=2 --use_hw_mpy=F5 --advice:power="all" -g --gcc --define=__CC430F5137__ --define=MHZ_433 --define=SPI_USE_IO_CS --define=DMA_USE_EXTERNAL_ISR --define=MSP430_USE_SMALL_MEMORY_MODEL --define=TPMS_USE_ENCODER --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --misra_required=error --misra_advisory=warning -z -m"SIDV3_CC430.map" --heap_size=40 --stack_size=150 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="SIDV3_CC430_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "SIDV3_CC430.out" "./Libraries/CC430/dma.obj" "./Libraries/CC430/hal_pmm.obj" "./Libraries/ES_Protocol/ES_Interfaces.obj" "./Libraries/ES_Protocol/ES_Protocol.obj" "./Libraries/RF/RF1A.obj" "./Libraries/RF/RfRegSettings.obj" "./Libraries/TPMS/tpms.obj" "./Libraries/TPMS/tpms_ak.obj" "./Libraries/TPMS/tpms_ask.obj" "./Libraries/TPMS/tpms_ldl.obj" "./Libraries/TPMS/tpms_mems.obj" "./Libraries/TPMS/tpms_sid.obj" "./Libraries/Tools/lib_ExoFifo.obj" "./Libraries/Tools/time_functions.obj" "./Projects/main.obj" "../Projects/lnk_cc430f5137.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: SIDV3_CC430.out'
+' '
+'Invoking: MSP430 Hex Utility'
+"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 --intel -o "SIDV3_CC430.hex"  "SIDV3_CC430.out" 
+Translating to Intel format...
+   "SIDV3_CC430.out" .text ==> .text
+   "SIDV3_CC430.out" .const ==> .const
+   "SIDV3_CC430.out" .cinit ==> .cinit
+   "SIDV3_CC430.out" AES ==> AES
+   "SIDV3_CC430.out" RTC ==> RTC
+   "SIDV3_CC430.out" PORT2 ==> PORT2
+   "SIDV3_CC430.out" PORT1 ==> PORT1
+   "SIDV3_CC430.out" TIMER1_A1 ==> TIMER1_A1
+   "SIDV3_CC430.out" TIMER1_A0 ==> TIMER1_A0
+   "SIDV3_CC430.out" DMA ==> DMA
+   "SIDV3_CC430.out" CC1101 ==> CC1101
+   "SIDV3_CC430.out" TIMER0_A1 ==> TIMER0_A1
+   "SIDV3_CC430.out" TIMER0_A0 ==> TIMER0_A0
+   "SIDV3_CC430.out" ADC12 ==> ADC12
+   "SIDV3_CC430.out" USCI_B0 ==> USCI_B0
+   "SIDV3_CC430.out" USCI_A0 ==> USCI_A0
+   "SIDV3_CC430.out" WDT ==> WDT
+   "SIDV3_CC430.out" COMP_B ==> COMP_B
+   "SIDV3_CC430.out" UNMI ==> UNMI
+   "SIDV3_CC430.out" SYSNMI ==> SYSNMI
+   "SIDV3_CC430.out" .reset ==> .reset
+'Finished building: SIDV3_CC430.hex'
+' '
+
+**** Build Finished ****
