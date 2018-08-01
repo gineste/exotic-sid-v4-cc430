@@ -56,7 +56,7 @@
 #define P5DIR_DIR_OUTPUT              ((uint8_t)0x03)
 
 /* GPIO Port 1 definition. */
-#define GPO_NOT_READY                 ((uint8_t)BIT6)
+#define GPO_NOT_READY                 ((uint8_t)BIT5)
 #define GPIO_UCB0SDA                  ((uint8_t)BIT3)
 #define GPI_UCB0SCL                   ((uint8_t)BIT2)
 
